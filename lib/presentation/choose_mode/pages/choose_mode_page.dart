@@ -2,6 +2,7 @@ import 'dart:ui'; // Import this for ImageFilter
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:spotify/presentation/auth/pages/signup_or_signin.dart';
 import 'package:spotify/presentation/choose_mode/bloc/theme_cubit.dart';
 
 import '../../../common/widgets/bottom/basic_app_bottom.dart';
@@ -143,7 +144,7 @@ class ChooseModePage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (BuildContext context) => const ChooseModePage(),
+                        builder: (BuildContext context) => const SignupOrSignin(),
                       ),
                     );
                   },
